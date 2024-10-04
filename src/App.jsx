@@ -22,12 +22,12 @@ const App = () => {
     setCart((prevCart) => {
       const existingProduct = prevCart.find(item => item.id === product.id);
       if (existingProduct) {
-        // Increase quantity if already in cart
+        
         return prevCart.map(item =>
           item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
         );
       } else {
-        // Add new product with quantity 1
+        
         return [...prevCart, { ...product, quantity: 1 }];
       }
     });

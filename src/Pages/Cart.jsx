@@ -6,7 +6,7 @@ import { BsFillCartXFill } from "react-icons/bs";
 const Cart = ({ cart, removeFromCart, updateQuantity, clearCart }) => {
   const navigate = useNavigate();
   const totalPrice = cart.reduce((total, item) => total + item.price * item.quantity, 0);
-  const discountedPrice = totalPrice * 0.9; // 10% discount
+  const discountedPrice = totalPrice * 0.9; 
 
   return (
     <div className="p-4 relative flex flex-col justify-center bg-[#f1f3f7] items-center">
