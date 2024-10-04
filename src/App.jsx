@@ -44,7 +44,7 @@ const App = () => {
       );
     });
   };
-
+ 
   const  clearCart = () => {
      setCart([]);
    };
